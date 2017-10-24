@@ -2,6 +2,7 @@
   "name": "can_i_get",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://AaronDrobek.github.io/canIgetUhh/front_end/",
   "dependencies": {
     "react": "^16.0.0",
     "react-cookie": "^2.1.1",
