@@ -1,5 +1,5 @@
 {
-  "name": "can_i_get",
+  "name": "front_end",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://canigetuhh.github.io/front_end/",
@@ -16,5 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }
