@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import {NavLink} from 'react-router-dom';
-import UserLogin from './UserLogin';
 
 export default class BaseLayout extends Component{
   constructor(props){

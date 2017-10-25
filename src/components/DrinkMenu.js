@@ -32,14 +32,18 @@ export default class DrinkMenu extends Component{
     let arr = this.state.drinks;
 
     arr.push({
-      sessionId: this.props.sessionId,
       strDrink:event.target.dataset.name,
       idDrink: event.target.dataset.id,
-      strDrinkThumb: event.target.dataset.pic
+      strDrinkThumb: event.target.dataset.pic,
+      strIngredient1: event.target.dataset.ing1,
+      strIngredient2: event.target.dataset.ing2,
+      strIngredient3: event.target.dataset.ing3,
+      strIngredient4: event.target.dataset.ing4,
+      sessionId: 0,
+
     });
 
     this.setState({ drinks: arr });
-    console.log(this.props.sessionId, 'the session Id from drinkmenu');
 
     console.log(event, 'this is event');
     console.log(this.state.drinks, 'this is state drinks');
@@ -55,7 +59,7 @@ export default class DrinkMenu extends Component{
     }
 
     console.log(this.state.drinks, "this is state.drinks!!!!!!!!!!!!!!");
-    fetch("https://can-i-get-uhh.herokuapp.com/api/customer/drink_order", {
+    fetch("http://192.168.86.233:8080/api/customer/drink_order", {
       method: "POST",
       body: JSON.stringify(listItem),
       headers: {
@@ -95,12 +99,12 @@ export default class DrinkMenu extends Component{
       return drink.strDrink.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
     })
       // console.log(this.state, "this is state*******************");
-      let match = this.props.match
+      // let match = this.props.match
       let listdrinks = filterDrinks.map((drink) =>{
         return(
           <div id="each"className='each_drink' key={drink.idDrink}>
             <div className='each_content'>
-              <button data-pic={drink.strDrinkThumb} data-id={drink.idDrink} data-name={drink.strDrink} type='submit' onClick={this.addDrink} style={{border:'none', backgroundColor:"#c71558", marginLeft: '2vw',marginTop: '1vw'}}>Click to add </button>
+              <button data-ing4={drink.strIngredient4} data-ing3={drink.strIngredien3} data-ing2={drink.strIngredient2} data-ing1={drink.strIngredient1} data-pic={drink.strDrinkThumb} data-id={drink.idDrink} data-name={drink.strDrink} type='submit' onClick={this.addDrink} style={{border:'none', backgroundColor:"#c71558", marginLeft: '2vw',marginTop: '1vw'}}>Click to add </button>
               <h4 className="drink" >{drink.strDrink}</h4>
               <h4 style={{marginLeft: '2vw'}}> Ingredients:</h4>
               <p>{drink.strIngredient1}</p>
@@ -109,7 +113,7 @@ export default class DrinkMenu extends Component{
               <p>{drink.strIngredient4}</p>
             </div>
             <div className="pic_div">
-              <img className="pic_box" src={drink.strDrinkThumb}/>
+              <img alt='' className="pic_box" src={drink.strDrinkThumb}/>
             </div>
           </div>
             )

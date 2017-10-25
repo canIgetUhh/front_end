@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import {BrowserHistory} from 'react-router-dom';
 
 
 export default class UserSignUp extends Component{
@@ -42,7 +41,7 @@ export default class UserSignUp extends Component{
     this.setState({dob: event.target.value})
   }
   addToList = (event) => {
-    let data;
+    // let data;
     event.preventDefault();
     console.log("SUBMITED");
     let listItem = JSON.stringify(this.state);

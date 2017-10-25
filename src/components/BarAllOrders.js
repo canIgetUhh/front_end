@@ -28,7 +28,6 @@ export default class BarAllOrders extends Component{
 
     let allOrders = this.state.drinks.map((order) => {
       console.log(order, "this is list");
-      console.log(order.drinkEntries[0].drink.strDrink, 'this is drink name!!!!!!!!!');
       console.log(order, 'this is the customer username');
     return(
             <div className='bars_orders'key={order.orderId} >

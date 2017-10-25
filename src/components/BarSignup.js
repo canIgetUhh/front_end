@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import {BrowserHistory} from 'react-router-dom';
 
 export default class BarSignup extends Component{
   constructor(props){
@@ -24,7 +23,7 @@ export default class BarSignup extends Component{
   let listItem = JSON.stringify(this.state);
 
   console.log(this.state, "this is state!!!!!!!!!!!!!!");
-  fetch("http://192.168.86.233:8080/api/bar/signup", {
+  fetch("https://can-i-get-uhh.herokuapp.com/api/bar/signup", {
     method: "POST",
     body: listItem,
     headers: {

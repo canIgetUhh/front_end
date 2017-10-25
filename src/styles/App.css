@@ -235,11 +235,13 @@
   background-color: blue;
 }
 .all_orders_content{
+  background-image: url('/taylor-davidson-24494.jpg');
+  background-size: cover;
   display: flex;
   /*border: solid black 3px;*/
   padding-top: 8vw;
   width: 100vw;
-  height: 100%;
+  height: 65vw;
 
 }
 .all_orders_box{
@@ -250,10 +252,12 @@
   padding-top: 8vw;
 }
 .bars_orders{
+  background-color: white;
+  background: rgba(211,211,211, 0.7);
   text-align: center;
   border: 1px solid black;
   width: 20vw;
-  height: 100%;
+  height: fit-content;
   margin-left: 1vw;
   margin-right: 1vw;
   margin-top: 1vw;
