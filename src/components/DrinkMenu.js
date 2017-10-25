@@ -95,7 +95,7 @@ export default class DrinkMenu extends Component{
 
 
   render(){
-    let filterDrinks = data.filter((drink) =>{
+    let filterDrinks = drinks.filter((drink) =>{
       return drink.strDrink.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
     })
       // console.log(this.state, "this is state*******************");
