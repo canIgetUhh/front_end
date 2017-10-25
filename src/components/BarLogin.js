@@ -27,7 +27,7 @@ export default class BarLogin extends Component{
   let listItem = JSON.stringify(this.state);
 
     console.log(this.state, "this is state!!!!!!!!!!!!!!");
-    fetch("http://https://can-i-get-uhh.herokuapp.com/api/bar/login", {
+    fetch("https://can-i-get-uhh.herokuapp.com/api/bar/login", {
       method: "POST",
       body: listItem,
       headers: {

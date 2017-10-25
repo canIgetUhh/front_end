@@ -14,7 +14,7 @@ export default class BarAllOrders extends Component{
 
 
   componentDidMount(){
-    fetch('http://192.168.86.233:8080/api/bar/current_orders').then(drinks =>{
+    fetch('https://can-i-get-uhh.herokuapp.com/api/bar/current_orders').then(drinks =>{
       return drinks.json();
     }).then(drinks => {
       this.setState({drinks: drinks});

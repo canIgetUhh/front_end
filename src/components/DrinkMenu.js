@@ -59,7 +59,7 @@ export default class DrinkMenu extends Component{
     }
 
     console.log(this.state.drinks, "this is state.drinks!!!!!!!!!!!!!!");
-    fetch("http://192.168.86.233:8080/api/customer/drink_order", {
+    fetch("https://can-i-get-uhh.herokuapp.com/api/customer/drink_order", {
       method: "POST",
       body: JSON.stringify(listItem),
       headers: {
@@ -86,7 +86,7 @@ export default class DrinkMenu extends Component{
 
 
   componentDidMount(){
-    fetch('http://www.thecocktaildb.com/api/json/v1/1/search.php?s').then(drinks =>{
+    fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s').then(drinks =>{
       return drinks.json();
     }).then(data => {
       this.setState({data: data.drinks});
