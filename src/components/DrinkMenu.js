@@ -85,13 +85,13 @@ export default class DrinkMenu extends Component{
 }
 
 
-  componentDidMount(){
-    fetch('https://can-i-get-uhh.herokuapp.com/api/customer/drink_menu').then(drinks =>{
-      return drinks.json();
-    }).then(data => {
-      this.setState({data: data.drinks});
-    })
-  }
+  // componentDidMount(){
+  //   fetch('https://can-i-get-uhh.herokuapp.com/api/customer/drink_menu').then(drinks =>{
+  //     return drinks.json();
+  //   }).then(data => {
+  //     this.setState({data: data.drinks});
+  //   })
+  // }
 
 
   render(){
