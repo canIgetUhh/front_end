@@ -59,7 +59,7 @@
 .bar_login_box{
   width: 100vw;
   height: 53vw;
-  background-image: url('/stoater-378124.jpg');
+  background-image: url('../images/stoater-378124.jpg');
   background-size: cover;
   background-position: 0px -40px;
 }
@@ -79,7 +79,7 @@
 .login_box{
   width: 100vw;
   height: 53vw;
-  background-image: url('/patrick-fore-362583.jpg');
+  background-image: url('../images/patrick-fore-362583.jpg');
   background-size: cover;
   background-position: 0px -40px;
 }
@@ -116,7 +116,7 @@
   width: 100vw;
   height: 53vw;
   /*background-image: url('/christian-stahl-313383.jpg');*/
-  background-image: url('/build/dylan-collette-292667.jpg');
+  background-image: url('../images/dylan-collette-292667.jpg');
   background-size: cover;
   background-position: -6px 0px ;
   position: fixed;
@@ -125,7 +125,7 @@
 .sign_box{
   width: 100vw;
   height: 53vw;
-  background-image: url('/michael-mroczek-199382.jpg');
+  background-image: url('../images/michael-mroczek-199382.jpg');
   background-size: cover;
   background-position: 120px 0px ;
   position: fixed;
@@ -133,7 +133,7 @@
 .bar_sign_box{
   width: 100vw;
   height: 53vw;
-  background-image: url('/karly-gomez-360069.jpg');
+  background-image: url('../images/karly-gomez-360069.jpg');
   background-size: cover;
   background-position: -10px 0px ;
   position: fixed;
@@ -235,7 +235,7 @@
   background-color: blue;
 }
 .all_orders_content{
-  background-image: url('/taylor-davidson-24494.jpg');
+  background-image: url('../images/taylor-davidson-24494.jpg');
   background-size: cover;
   display: flex;
   /*border: solid black 3px;*/
