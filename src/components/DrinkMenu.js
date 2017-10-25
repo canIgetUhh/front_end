@@ -77,6 +77,11 @@ export default class DrinkMenu extends Component{
     this.setState({drinks: [] })
 
   })
+  .then( ()=>{
+    alert('Thank you! Your Drink Order Has Been Submitted')
+
+  })
+
 
   .catch(err => {
     console.log(err, "Error");
@@ -84,7 +89,7 @@ export default class DrinkMenu extends Component{
   })
 }
 
-
+  //
   // componentDidMount(){
   //   fetch('https://can-i-get-uhh.herokuapp.com/api/customer/drink_menu').then(drinks =>{
   //     return drinks.json();
@@ -104,8 +109,8 @@ export default class DrinkMenu extends Component{
         return(
           <div id="each"className='each_drink' key={drink.idDrink}>
             <div className='each_content'>
-              <button data-ing4={drink.strIngredient4} data-ing3={drink.strIngredien3} data-ing2={drink.strIngredient2} data-ing1={drink.strIngredient1} data-pic={drink.strDrinkThumb} data-id={drink.idDrink} data-name={drink.strDrink} type='submit' onClick={this.addDrink} style={{border:'none', backgroundColor:"#c71558", marginLeft: '2vw',marginTop: '1vw'}}>Click to add </button>
-              <h4 className="drink" >{drink.strDrink}</h4>
+              <button data-ing4={drink.strIngredient4} data-ing3={drink.strIngredien3} data-ing2={drink.strIngredient2} data-ing1={drink.strIngredient1} data-pic={drink.strDrinkThumb} data-id={drink.idDrink} data-name={drink.strDrink} type='submit' onClick={this.addDrink} style={{border:'none', backgroundColor:"red", marginLeft: '2vw',marginTop: '1vw'}}>Click to add </button>
+              <h4 style={{textDecoration: 'none'}} className="drink" >{drink.strDrink}</h4>
               <h4 style={{marginLeft: '2vw'}}> Ingredients:</h4>
               <p>{drink.strIngredient1}</p>
               <p>{drink.strIngredient2}</p>
@@ -145,14 +150,16 @@ export default class DrinkMenu extends Component{
               <h2>
                 <NavLink className="main_nav" activeClassName="selected" to='/drinkmenu'>Drink List</NavLink>
                 <NavLink className="main_nav" activeClassName="selected" to='/'>Log Out</NavLink>
-                <input style={{marginLeft: '6vw'}} id="searchbar" onChange={this.updateSearch} type="text" value={this.state.search} placeholder='filter results'/>
+                <input style={{marginLeft: '6vw', width: '20vw'}} id="searchbar" onChange={this.updateSearch} type="text" value={this.state.search} placeholder='filter results'/>
+
               </h2>
+              <h1 style={{marginLeft: '2vw'}} > Can I Get Uhh....</h1>
           </div>
 
           <div className='bar_orders'>
               <h5 style={{textAlign: 'center'}} >Drinks In Cart -{this.state.drinks.length}-</h5>
               <button className='drink_submit' onClick={this.addDrinkOrder} >Submit Drink Order</button>
-              <button className='drink_delete' onClick={this.removeDrinks} >remove last selection</button>
+              <button className='drink_delete' onClick={this.removeDrinks} >Remove Last Selection</button>
           </div>
               <div className='order_drinks'>
 

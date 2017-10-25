@@ -55,6 +55,7 @@ export default class BarAllOrders extends Component{
             <NavLink className="main_nav" activeClassName="selected" to='/barallorders'>All Drink Orders</NavLink>
 
             <NavLink className="main_nav" activeClassName="selected" to='/'>Log Out</NavLink>
+            <h1 style={{color: 'white', marginLeft: '2vw'}} > All Bar Orders: </h1>
           </h2>
           </div>
         <div className="all_orders_content">

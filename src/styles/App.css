@@ -28,10 +28,11 @@
   to { transform: rotate(360deg); }
 }
 .main_nav{
+  color: blue;
   margin-left: 2vw;
 }
 .selected{
-  color: green;
+  color: white;
 }
 .customer{
   padding-top: 12vw;
@@ -144,7 +145,7 @@
   flex-wrap: wrap;
 }
 .each_drink{
-  box-shadow: 10px 10px 5px #b37400;
+  box-shadow: 10px 10px 5px #78898a;
   display: flex;
 
   margin-left: 2vw;
@@ -178,10 +179,10 @@
   height: 20vw;
 }
 .drink_box{
-  background-color: orange;
+  background-color: lightblue;
 }
 .order_name{
-  color: grey;
+  color: white;
   font-weight: bold;
   margin-top: 0vw;
   margin-bottom: 0vw;
@@ -192,6 +193,7 @@
   height: 10vw;
 }
 .bar_orders{
+  border: 2px solid black;
   width: 25vw;
   height: 10vw;
 }
@@ -205,14 +207,14 @@
   height: 10vw;
 }
 .nav_bar{
-  background-color: orange;
+  background-color: grey;
   position: fixed;
   display: flex;
   width: 100vw;
   height: 11vw;
 }
 .nav_bar_bar{
-  background-color: violet;
+
   position: fixed;
   display: flex;
   width: 100vw;
@@ -223,7 +225,7 @@
   width: 25vw;
   border: none;
   margin-top: 1vw;
-  background-color: #c71558;
+  background-color: red;
 }
 .drink_delete{
   border-style: none;
@@ -252,6 +254,7 @@
   padding-top: 8vw;
 }
 .bars_orders{
+
   background-color: white;
   background: rgba(211,211,211, 0.7);
   text-align: center;
@@ -260,7 +263,7 @@
   height: fit-content;
   margin-left: 1vw;
   margin-right: 1vw;
-  margin-top: 1vw;
+  margin-top: 3vw;
 }
 .list_items{
   list-style-type:  none;
