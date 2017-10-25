@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-// import drinks from '../data/drink';
+import drinks from '../data/drink';
 
 
 export default class DrinkMenu extends Component{
@@ -95,7 +95,7 @@ export default class DrinkMenu extends Component{
 
 
   render(){
-    let filterDrinks = this.state.data.filter((drink) =>{
+    let filterDrinks = data.filter((drink) =>{
       return drink.strDrink.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
     })
       // console.log(this.state, "this is state*******************");
