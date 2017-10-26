@@ -65,7 +65,7 @@ export default class BarLogin extends Component{
         <form onSubmit={this.logIn}>
           <input onChange={this.handleUsernameChange} value={this.state.username} className="input" type="text" placeholder='User Name'/>
           <br/>
-          <input onChange={this.handlePasswordChange} value={this.state.password} className="input" type="text" placeholder='Password'/>
+          <input onChange={this.handlePasswordChange} value={this.state.password} className="input" type="password" placeholder='Password'/>
           <br/>
           <input style={{border:"0px", width: "10vw", backgroundColor: "violet"}} type="submit" value="submit"/>
           <br/>

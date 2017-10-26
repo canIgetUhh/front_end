@@ -69,7 +69,7 @@ let listItem = JSON.stringify(this.state);
           <form onSubmit={this.logIn}>
             <input onChange={this.handleUsernameChange} value={this.state.username} className="input" type="text" placeholder='User Name'/>
             <br/>
-            <input onChange={this.handlePasswordChange} value={this.state.password} className="input" type="text" placeholder='Password'/>
+            <input onChange={this.handlePasswordChange} value={this.state.password} className="input" type="password" placeholder='Password'/>
             <br/>
             <input  style={{border:"0px", width: "10vw", backgroundColor: "orange"}} type="submit" value="submit"/>
             <br/>
