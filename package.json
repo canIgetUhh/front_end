@@ -2,7 +2,7 @@
   "name": "front_end",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://canigetuhh.github.io/",
+  "homepage": "https://canigetuhh.github.io/front_end",
   "dependencies": {
     "react": "^16.0.0",
     "react-cookie": "^2.1.1",
