@@ -61,7 +61,7 @@ export default class BarLogin extends Component{
     return(
       <div className="bar_login_box">
       <div className="bar_login_content">
-        <h1> Employee Login </h1>
+        <h1 style={{marginTop: '7vw', fontWeight: 'bold'}} > Employee Login </h1>
         <form onSubmit={this.logIn}>
           <input onChange={this.handleUsernameChange} value={this.state.username} className="input" type="text" placeholder='User Name'/>
           <br/>

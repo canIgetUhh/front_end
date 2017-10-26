@@ -109,7 +109,7 @@ export default class DrinkMenu extends Component{
         return(
           <div id="each"className='each_drink' key={drink.idDrink}>
             <div className='each_content'>
-              <button data-ing4={drink.strIngredient4} data-ing3={drink.strIngredien3} data-ing2={drink.strIngredient2} data-ing1={drink.strIngredient1} data-pic={drink.strDrinkThumb} data-id={drink.idDrink} data-name={drink.strDrink} type='submit' onClick={this.addDrink} style={{color: 'white', border:'none', backgroundColor:"grey", marginLeft: '2vw',marginTop: '1vw'}}>Click to add </button>
+              <button data-ing4={drink.strIngredient4} data-ing3={drink.strIngredien3} data-ing2={drink.strIngredient2} data-ing1={drink.strIngredient1} data-pic={drink.strDrinkThumb} data-id={drink.idDrink} data-name={drink.strDrink} type='submit' onClick={this.addDrink} style={{color: 'white', border:'none', backgroundColor:"grey", marginLeft: '2vw',marginTop: '1vw', fontSize: '12pt'}}>add </button>
               <h4 style={{textDecoration: 'none'}} className="drink" >{drink.strDrink}</h4>
               <h4 style={{marginLeft: '2vw'}}> Ingredients:</h4>
               <p>{drink.strIngredient1}</p>
@@ -157,9 +157,9 @@ export default class DrinkMenu extends Component{
           </div>
 
           <div className='bar_orders'>
-              <h5 style={{textAlign: 'center'}} >Drinks In Cart -{this.state.drinks.length}-</h5>
+              <h5 style={{paddingTop: '1vw', paddingBottom: '2vw', margin: '0',fontSize:'12pt', textAlign: 'center'}} >Drinks In Cart -{this.state.drinks.length}-</h5>
               <button className='drink_submit' onClick={this.addDrinkOrder} >Submit Drink Order</button>
-              <button className='drink_delete' onClick={this.removeDrinks} >Remove Last </button>
+              <button className='drink_delete' onClick={this.removeDrinks} >Remove Last Selection </button>
           </div>
               <div className='order_drinks'>
 

@@ -61,6 +61,7 @@
   width: 100vw;
   height: 53vw;
   background-image: url('../images/stoater-378124.jpg');
+
   background-size: cover;
   background-position: 0px -40px;
 }
@@ -221,16 +222,19 @@
   height: 8vw;
 }
 .drink_submit{
+  font-size: 12pt;
+  font-weight: bold;
   margin-left: 1vw;
   border: none;
   height: 3vw;
   width: 10vw;
   border: none;
-  margin-top: 1vw;
   background-color: lightblue;
 }
 .drink_delete{
-  margin-bottom: 2vw;
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 1vw;
   border-style: none;
   margin-left: 3vw;
   border: none;
