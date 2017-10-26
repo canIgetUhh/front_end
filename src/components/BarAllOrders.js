@@ -35,7 +35,7 @@ export default class BarAllOrders extends Component{
                 <h5>Customer Username: {order.customer.username}</h5>
                 <h5 style={{textAlign: 'left'}}>Order Details:</h5>
                 {order.drinkEntries.map((item, idx) => (
-                <ul><h4 style={{textAlign: 'left', marginBottom: '0'}} key={idx}>{item.drink.strDrink} 1</h4>
+                <ul><h4 style={{ marginRight: '3vw', textAlign: 'left', marginBottom: '0'}} key={idx}>{item.drink.strDrink} </h4>
                   <h6 style={{textAlign: 'left',margin: '0'}}>Ingredients:</h6>
                   <li className='list_items'>{item.drink.strIngredient1}</li>
                   <li className='list_items'>{item.drink.strIngredient2}</li>
