@@ -1,4 +1,6 @@
 This app was originally designed to submit a drink order at events were there are long lines to grab an adult beverage (concerts, festivals, etc.). A user would have the ability to place their drink order in cue at the bar without having to wait in a long line. There would be a separate pickup area for customers using this service. This is a prototype and does not contain 100% functionality. This project was the capstone project to present at demo day for the graduates of The Iron Yard, October 2017.  I built the front end using React, and collaborated with 2 other classmates who were responsible for the back end database. I do not have access to the data base any longer, and do not believe it is being maintained. You can use 123 as user and password to gain access. (again, it doesn't appear the database is being supported anylonger)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
