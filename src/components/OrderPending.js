@@ -17,7 +17,7 @@ class OrderPending extends Component {
         <NavLink to='drinkmenu'><button>Back</button></NavLink>
 
 
-      
+
 
 
 
